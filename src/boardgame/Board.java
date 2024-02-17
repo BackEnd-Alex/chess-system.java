@@ -28,6 +28,14 @@ public class Board {
 		this.columns = columns;
 	}
 	
+	public Piece piece (int row, int column) {
+		return pieces[row][column];
+	}
 	
+	// SOBRECARGA DO METODO PIECE
+	public Piece peice (Position position) {
+		return pieces[position.getRow()][position.getColumn()];
+	}
+
 
 }
