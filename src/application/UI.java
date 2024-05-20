@@ -4,10 +4,9 @@ import chess.ChessPiece;
 
 public class UI {
 	public static void printBoard(ChessPiece[][] pieces) {
-		
 		// LOGICA PARA IMPRIMIR TABULEIRO
 		for(int i = 0; i < pieces.length; i++) {
-			System.out.print(8 -i);
+			System.out.print(8 -i + " ");
 			for(int j = 0; j < pieces.length; j++) {
 				printPiece(pieces[i][j]);
 			}
@@ -15,7 +14,7 @@ public class UI {
 		}
 		System.out.println("  a b c d e f g h");
 	}
-	// LOGICA PARA IMPRIMIR UMA PEÇA DO TABULEIRO
+	// LOGICA PARA IMPRIMIR UMA PEï¿½A DO TABULEIRO
 	
 	private static void printPiece(ChessPiece piece) {
 		if(piece == null) {

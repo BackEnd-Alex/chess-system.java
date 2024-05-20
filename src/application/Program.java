@@ -12,9 +12,9 @@ public class Program {
 		System.out.println();
 		
 		ChessMatch chessMatch = new ChessMatch();
-		//funçao para imprimir as peças da partida, criamos a classe UI,com método para recber
-		//a matriz de peças da partiada.
+		//funcao para imprimir as pecas da partida, criamos a classe UI,com metodo para receber
+		//a matriz de pecas da partida.
 		UI.printBoard(chessMatch.getPieces());
-
+		
 	}
 }
